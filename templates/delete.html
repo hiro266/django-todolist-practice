@@ -1,0 +1,9 @@
+<!-- base.htmlの呼び込み -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- postする際はCSRF対策で{% csrf_token %}を記述する -->
+  <form action="" method="POST"> {% csrf_token %}
+    <input type="submit" value="削除します">
+  </form>>
+{% endblock content %}
